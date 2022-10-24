@@ -6,7 +6,8 @@ public class ReadyState implements FlipperStateI {
     }
     @Override
     public void pressStart() {
-        System.out.println("ReadyState");
+        System.out.println("ReadyState");//test
+        flipper.setFlipperState(new PlayState(flipper));
         
     }
     
