@@ -7,7 +7,8 @@ public class NoCreditState implements FlipperStateI {
 
     @Override
     public void pressStart() {
-        System.out.println("NoCreditState");
+        System.out.println("NoCreditState");//test
+        System.out.println("Kein Kredit vorhanden!");
         
     }
     
