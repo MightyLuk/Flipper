@@ -9,6 +9,7 @@ public class ReadyState implements FlipperStateI {
         System.out.println("ReadyState");//test
         flipper.setFlipperState(new PlayState(flipper));
         flipper.setCredits(flipper.getCredits()-1);
+        flipper.startGame();
         
     }
     
