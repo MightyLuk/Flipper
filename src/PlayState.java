@@ -7,8 +7,8 @@ public class PlayState implements FlipperStateI{
 
     @Override
     public void pressStart() {
-        System.out.println("PlayState");
-        
+        System.out.println("PlayState");//test
+        System.out.println("Vladimir und Lukas");
     }
     
 }
