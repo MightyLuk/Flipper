@@ -1,3 +1,3 @@
-interface FlipperStateI {
+public interface FlipperStateI {
     public void pressStart();
 }

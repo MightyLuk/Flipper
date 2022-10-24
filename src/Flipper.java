@@ -1,5 +1,17 @@
 public class Flipper {
-    public static void main(String[] args) throws Exception {
-        System.out.println("Hello, World!");
+
+    private FlipperStateI flipperState;
+
+    public Flipper(){
+        
+        setFlipperState(new NoCreditState(this));
+        System.out.println(flipperState);
+
+    }
+    public void setFlipperState(FlipperStateI flipperState){
+        this.flipperState = flipperState;
+    }
+    public void pressStart(){
+        flipperState.pressStart();
     }
 }
