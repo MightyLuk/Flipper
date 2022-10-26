@@ -1,8 +1,12 @@
+
+import FlipperElements.*;
+
 public class Flipper {
 
     private static Flipper instance;
     private FlipperStateI flipperState;
     private int credits = 0;
+    private Game game = new Game();
 
     public int getCredits() {
         return credits;
@@ -35,6 +39,10 @@ public class Flipper {
     }
     public void startGame(){
         System.out.println("Game running test");
+        
+        FlipperElement bumper1 = new Bumper();
+        this.game.score = this.game.score + bumper1.hit();
+        System.out.println("Score: " + game.score);
         if(credits == 0) {
             setFlipperState(new NoCreditState(this));
         } else {
