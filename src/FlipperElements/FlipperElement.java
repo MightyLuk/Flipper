@@ -1,9 +1,17 @@
 package FlipperElements;
+
+import Flipper.Visitor;
+
 public abstract class FlipperElement {
-    int points = 0;
+    int points;
 
     public FlipperElement() {
+        
     }
 
-    public abstract int hit();
+    public abstract FlipperElement hit(FlipperElement element);
+
+    public abstract int accept(Visitor v);
+
+    public abstract int getPoints();
 }
